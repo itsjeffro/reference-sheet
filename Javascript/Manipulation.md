@@ -5,8 +5,7 @@
 Given that our starting object is the following...
 ```javascript
 let fruits = {
-  id: 1,
-  name: "apple"
+  1: {id: 1, name: "apple"}
 };
 ```
 

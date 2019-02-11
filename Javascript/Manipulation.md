@@ -59,3 +59,11 @@ fruits = Object.keys(fruits).reduce((previous, key) => {
 
 // {2: {id: 2, name: "pear"}}
 ```
+
+## Arrays
+Given that our starting array is the following...
+```javascript
+let vegetables = [
+  {id: 1, name: "carrot"}
+];
+```

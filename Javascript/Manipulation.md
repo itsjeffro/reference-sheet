@@ -67,3 +67,16 @@ let vegetables = [
   {id: 1, name: "carrot"}
 ];
 ```
+
+### Add
+```javascript
+vegetables = vegetables.concat({id: 2, name: "lettuce"});
+
+// [{id: 1, name: "carrot"}, {id: 2, name: "lettuce"}]
+```
+
+### Update
+TBA
+
+### Delete
+TBA

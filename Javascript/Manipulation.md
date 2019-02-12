@@ -79,4 +79,12 @@ vegetables = vegetables.concat({id: 2, name: "lettuce"});
 TBA
 
 ### Delete
-TBA
+```javascript
+let id = 1;
+
+vegetables = vegetables.filter(vegetable => {
+  return vegetable.id !== id;
+});
+
+// [{id: 2, name: "lettuce"}]
+```

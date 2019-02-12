@@ -28,14 +28,14 @@ fruits = {
 ### Update
 
 ```javascript
-let fruit = {
+let updatedFruit = {
   id: 1, 
   name: "apple pie"
 };
 
 fruits = Object.keys(fruits).reduce((previous, key) => {
-  if (key == fruit.id) {
-    previous[fruit.id] = fruit;
+  if (key == updatedFruit.id) {
+    previous[updatedFruit.id] = updatedFruit;
   } else {
     previous[key] = fruits[key];
   }
@@ -48,10 +48,10 @@ fruits = Object.keys(fruits).reduce((previous, key) => {
 ### Delete
 
 ```javascript
-let id = 1;
+let deleteById = 1;
 
 fruits = Object.keys(fruits).reduce((previous, key) => {
-  if (key != id) {
+  if (key != deleteById) {
     previous[key] = fruits[key];
   }
   return previous;
@@ -76,14 +76,29 @@ vegetables = vegetables.concat({id: 2, name: "lettuce"});
 ```
 
 ### Update
-TBA
+```javascript
+let updatedVegetable = {
+  id: 1, 
+  name: "carrot juice"
+};
+
+vegetables = vegetables.map(vegetable => {
+  if (vegetable.id === updatedVegetable.id) {
+    return updatedVegetable;
+  } else {
+    return vegetable;
+  }
+});
+
+// [{id: 1, name: "carrot juice"}, {id: 2, name: "lettuce"}]
+```
 
 ### Delete
 ```javascript
-let id = 1;
+let deleteById = 1;
 
 vegetables = vegetables.filter(vegetable => {
-  return vegetable.id !== id;
+  return vegetable.id !== deleteById;
 });
 
 // [{id: 2, name: "lettuce"}]

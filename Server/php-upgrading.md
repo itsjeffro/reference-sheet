@@ -1,4 +1,4 @@
-# Upgrading PHP
+# PHP Upgrading
 
 ## 1. Anylise code base
 Check for imcompatibility issues by using a static code anylizer.

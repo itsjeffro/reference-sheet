@@ -35,7 +35,7 @@ Press <enter> to keep the current choice[*], or type selection number:
 Restarting php service without the root password prompt.
 
 ```bash
-sudo visudo -f /etc/sudoers.d/{filename}
+sudo visudo -f /etc/sudoers.d/{filename, eg. php-reload}
 ```
 
 Then add ...

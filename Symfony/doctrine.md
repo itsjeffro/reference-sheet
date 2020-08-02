@@ -16,3 +16,7 @@ When updating an entity, persist is not needed. This is because when an object i
 Doctrine will know that you would potentially like to save the object.
 
 In this case, you may simply exlude `persist` and call `flush` at the end.
+
+## Resources
+
+- [Updating entities](https://symfonycasts.com/screencast/symfony-doctrine/updating-entity)

@@ -1,4 +1,4 @@
-# Stateful VS Stateless
+# Stateful vs Stateless
 
 Sources:
 

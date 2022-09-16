@@ -1,6 +1,21 @@
 # Manipulating objects and arrays
 
-## Objects
+[Manipulating objects](#manipulating-objects)
+
+- [Add to object](#add-to-object)
+- [Update property value](#update-property-value)
+- [Remove from object](#remove-from-object)
+
+
+[Manipulating arrays](#manipulating-arrays)
+
+- [Add object in array](#add-object-in-array)
+- [Update object in array](#update-object-in-array)
+- [Remove object from array](#remove-object-from-array)
+
+---
+
+## Manipulating objects
 
 Given that our starting object is the following...
 ```javascript
@@ -9,7 +24,7 @@ let fruits = {
 };
 ```
 
-### Add
+### Add to object
 
 ```javascript
 let fruit = {
@@ -21,11 +36,15 @@ fruits = {
   ...fruits,
   [fruit.id]: {fruit}
 };
-
-// {1: {id: 1, name: "apple"}, 2: {id: 2, name: "pear"}}
+```
+```javascript
+{
+  1: {id: 1, name: "apple"},
+  2: {id: 2, name: "pear"}
+}
 ```
 
-### Update
+### Update property value
 
 ```javascript
 let updatedFruit = {
@@ -41,11 +60,15 @@ fruits = Object.keys(fruits).reduce((previous, key) => {
   }
   return previous;
 }, {})
-
-// {1: {id: 1, name: "applie pie"}, 2: {id: 2, name: "pear"}}
+```
+```javascript
+{
+  1: {id: 1, name: "apple pie"},
+  2: {id: 2, name: "pear"}
+}
 ```
 
-### Delete
+### Remove from object
 
 ```javascript
 let deleteById = 1;
@@ -56,11 +79,14 @@ fruits = Object.keys(fruits).reduce((previous, key) => {
   }
   return previous;
 }, {})
-
-// {2: {id: 2, name: "pear"}}
+```
+```javascript
+{
+  2: {id: 2, name: "pear"}
+}
 ```
 
-## Arrays
+## Manipulating arrays
 Given that our starting array is the following...
 ```javascript
 let vegetables = [
@@ -68,14 +94,18 @@ let vegetables = [
 ];
 ```
 
-### Add
+### Add object in array
 ```javascript
 vegetables = vegetables.concat({id: 2, name: "lettuce"});
-
-// [{id: 1, name: "carrot"}, {id: 2, name: "lettuce"}]
+```
+```javascript
+[
+  {id: 1, name: "carrot"},
+  {id: 2, name: "lettuce"}
+]
 ```
 
-### Update
+### Update object in array
 ```javascript
 let updatedVegetable = {
   id: 1, 
@@ -89,17 +119,24 @@ vegetables = vegetables.map(vegetable => {
     return vegetable;
   }
 });
-
-// [{id: 1, name: "carrot juice"}, {id: 2, name: "lettuce"}]
+```
+```javascript
+[
+  {id: 1, name: "carrot juice"},
+  {id: 2, name: "lettuce"}
+]
 ```
 
-### Delete
+### Remove object from array
 ```javascript
 let deleteById = 1;
 
 vegetables = vegetables.filter(vegetable => {
   return vegetable.id !== deleteById;
 });
-
-// [{id: 2, name: "lettuce"}]
+```
+```javascript
+[
+  {id: 2, name: "lettuce"}
+]
 ```

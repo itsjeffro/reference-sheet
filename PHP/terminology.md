@@ -32,3 +32,9 @@ It shows only useful information, remaining are hidden from the end user.
 ## Implementation
 
 TBD
+
+---
+
+Sources:
+
+- [Encapsulation and Abstraction](https://www.thinktocode.com/2017/11/06/clean-code-php-abstraction-encapsulation/)

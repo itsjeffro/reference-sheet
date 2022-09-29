@@ -23,11 +23,11 @@ class Bar implements BarInterface
 
 ## Abstraction
 
-Data Abstraction is the most important features of any OOPS programming language. It shows only useful information, remaining are hidden form the end user. Abstraction is the any representation of data in which the implementation details are hidden (abstracted).
+Data Abstraction is the most important features of any OOP programming language. 
 
 ## Encapsulation
 
-TBD
+It shows only useful information, remaining are hidden from the end user.
 
 ## Implementation
 

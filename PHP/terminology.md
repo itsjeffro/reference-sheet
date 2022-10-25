@@ -23,7 +23,9 @@ class Bar implements BarInterface
 
 ## Abstraction
 
-Data Abstraction is the most important features of any OOP programming language. 
+Data Abstraction is the most important features of any OOP programming language.
+
+Flexibility comes from good abstractions, and not from inheritance.
 
 ## Encapsulation
 
@@ -38,3 +40,4 @@ TBD
 Sources:
 
 - [Encapsulation and Abstraction](https://www.thinktocode.com/2017/11/06/clean-code-php-abstraction-encapsulation/)
+- [When to declare classes final](https://ocramius.github.io/blog/when-to-declare-classes-final/)
